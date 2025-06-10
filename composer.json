@@ -6,7 +6,7 @@
   "license": "MIT",
   "authors": [],
   "version": "1.0.0",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "php": ">=8.1",
     "beauty-framework/http": "^1.0",
