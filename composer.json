@@ -1,0 +1,32 @@
+{
+  "name": "beauty-framework/core",
+  "type": "library",
+  "description": "Beauty core",
+  "keywords": ["beauty", "core"],
+  "license": "MIT",
+  "authors": [],
+  "version": "1.0.0",
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.1",
+    "beauty-framework/http": "^1.0",
+    "beauty-framework/cli": "^1.0",
+    "spiral/roadrunner": "^2024",
+    "spiral/roadrunner-http": "^3.4.0",
+    "symfony/finder": "8.0.x-dev",
+    "spiral/roadrunner-cli": "^2.2",
+    "php-di/php-di": "dev-master",
+    "vlucas/phpdotenv": "^5.6@dev",
+    "roadrunner-php/lock": "1.x-dev",
+    "psr/event-dispatcher": "^1.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Beauty\\Core\\": "src/"
+    },
+    "files": [
+      "helpers/env.php",
+      "helpers/di.php"
+    ]
+  }
+}

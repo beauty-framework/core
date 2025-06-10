@@ -1,0 +1,19 @@
+<?php
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use App\Events\MyEvent;
+
+class {{ class }}
+{
+    public function __construct(
+        // DI dependencies
+    )
+    {
+    }
+
+    public function handle(MyEvent $event): void
+    {
+    }
+}
