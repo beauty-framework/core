@@ -191,7 +191,9 @@ class Router
                 $typeName = $paramType->getName();
 
                 if (is_subclass_of($typeName, AbstractValidatedRequest::class)) {
-                    $args[] = new $typeName($request);
+                    $args[] = (new $typeName($request))
+                        ->withBaseAttributes($request);
+
                     continue;
                 }
 
