@@ -5,7 +5,7 @@
   "keywords": ["beauty", "core"],
   "license": "MIT",
   "authors": [],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "minimum-stability": "stable",
   "require": {
     "php": ">=8.1",

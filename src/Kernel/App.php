@@ -79,7 +79,7 @@ class App
         };
 
         foreach (array_reverse($allMiddlewares) as $middlewareClass) {
-            $middleware = new $middlewareClass();
+            $middleware = $this->container->get($middlewareClass);
             $handler = new class($middleware, $handler) implements RequestHandlerInterface {
                 public function __construct(
                     private MiddlewareInterface     $middleware,
